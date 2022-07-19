@@ -26,7 +26,7 @@ const App = () => {
     }
 
     useEffect(() => {
-        searchMovies()
+        searchMovies('Batman')
     },[])
     
     return(
@@ -36,7 +36,7 @@ const App = () => {
             </h1>
 
             <div className="search">
-                <input placeholder="Search for movies"
+                <input placeholder="Search for a movie"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 />
